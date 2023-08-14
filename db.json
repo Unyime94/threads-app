@@ -1,0 +1,86 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "user_uuid": "4984e9b8-1364-4bb6-b6cf-d4cbcf9994e6",
+      "handle": "unyime kona",
+      "bio": "software engineer",
+      "link": "https.www.unyimekona.com",
+      "img": "https://i.imgur.com/rWYtZa6.png",
+      "instagram_url": "https://www.instagram.com/unyimekona",
+      "followers": [
+        { "user_uuid": "f8b91963-f036-4e30-9723-289cece38457" },
+        { "user_uuid": "42c9f27c-2e9a-47a3-8d7d-47ac15a11dee" }
+      ]
+    },
+    {
+      "id": 2,
+      "user_uuid": "335c4072-68c5-44d6-998d-b53198055520",
+      "handle": "seowo chukwurah",
+      "bio": "plant biologist",
+      "link": "https.www.seowoch.com",
+      "img": "https://i.imgur.com/rWYtZa6.png",
+      "instagram_url": "https://www.instagram.com/seowoch",
+      "followers": [
+        { "user_uuid": "f8b91963-f036-4e30-9723-289cece38457" },
+        { "user_uuid": "8b8a9b8a-f286-4c5e-af6c-1988b6fce0b8" }
+      ]
+    },
+    {
+      "id": 3,
+      "user_uuid": "8b8a9b8a-f286-4c5e-af6c-1988b6fce0b8",
+      "handle": "samuel aro",
+      "bio": "electrical engineer",
+      "link": "https.www.samuelaro.com",
+      "img": "https://i.imgur.com/jONHmE5.png",
+      "instagram_url": "https://www.instagram.com/samuelaro",
+      "followers": [
+        { "user_uuid": "f8b91963-f036-4e30-9723-289cece38457" },
+        { "user_uuid": "4984e9b8-1364-4bb6-b6cf-d4cbcf9994e6" }
+      ]
+    }
+  ],
+  "threads": [
+    {
+      "id": 1,
+      "timestamp": "Mon Aug 14 2023 15:34:43 GMT+0100 (West Africa Standard Time)",
+      "thread_from": "4984e9b8-1364-4bb6-b6cf-d4cbcf9994e6",
+      "thread_to": null,
+      "reply_to": null,
+      "text": "Hello world (of threads)",
+      "likes": [
+        {
+          "uuid": "335c4072-68c5-44d6-998d-b53198055520"
+        },
+        { "uuid": "8b8a9b8a-f286-4c5e-af6c-1988b6fce0b8" }
+      ]
+    },
+    {
+      "id": 2,
+      "timestamp": "Mon Aug 14 2023 16:34:43 GMT+0100 (West Africa Standard Time)",
+      "thread_from": "4984e9b8-1364-4bb6-b6cf-d4cbcf9994e6",
+      "thread_to": null,
+      "reply_to": null,
+      "text": "Awesome thread",
+      "likes": []
+    },
+    {
+      "id": 3,
+      "timestamp": "Mon Aug 14 2023 17:34:43 GMT+0100 (West Africa Standard Time)",
+      "thread_from": "335c4072-68c5-44d6-998d-b53198055520",
+      "thread_to": null,
+      "reply_to": null,
+      "text": "Excited for my new research!",
+      "likes": []
+    },
+    {
+      "id": 4,
+      "timestamp": "Mon Aug 14 2023 17:46:43 GMT+0100 (West Africa Standard Time)",
+      "thread_from": "4984e9b8-1364-4bb6-b6cf-d4cbcf9994e6",
+      "thread_to": "335c4072-68c5-44d6-998d-b53198055520",
+      "reply_to": null,
+      "text": "Congrats,, Seowo!",
+      "likes": []
+    }
+  ]
+}
