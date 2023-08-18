@@ -30,7 +30,7 @@ const App = () => {
       {user && (
         <div className="app">
           <Nav url={user.instagram_url} />
-          <Header />
+          <Header user={user} />
           <Feed />
           {/* <PopUp /> */}
         </div>

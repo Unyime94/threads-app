@@ -3,11 +3,12 @@
     {
       "id": 1,
       "user_uuid": "4984e9b8-1364-4bb6-b6cf-d4cbcf9994e6",
-      "handle": "unyime kona",
+      "handle": "unyimekona",
       "bio": "software engineer",
-      "link": "https.www.unyimekona.com",
+      "link": "https://www.unyimekona.com",
       "img": "https://i.imgur.com/rWYtZa6.png",
       "instagram_url": "https://www.instagram.com/unyimekona",
+      "username": "Code with Unyime Kona",
       "followers": [
         { "user_uuid": "f8b91963-f036-4e30-9723-289cece38457" },
         { "user_uuid": "42c9f27c-2e9a-47a3-8d7d-47ac15a11dee" }
@@ -16,11 +17,12 @@
     {
       "id": 2,
       "user_uuid": "335c4072-68c5-44d6-998d-b53198055520",
-      "handle": "seowo chukwurah",
+      "handle": "seowochukwurah",
       "bio": "plant biologist",
-      "link": "https.www.seowoch.com",
+      "link": "https://www.seowoch.com",
       "img": "https://i.imgur.com/rWYtZa6.png",
       "instagram_url": "https://www.instagram.com/seowoch",
+      "username": "Plant biology is my thingy",
       "followers": [
         { "user_uuid": "f8b91963-f036-4e30-9723-289cece38457" },
         { "user_uuid": "8b8a9b8a-f286-4c5e-af6c-1988b6fce0b8" }
@@ -29,9 +31,9 @@
     {
       "id": 3,
       "user_uuid": "8b8a9b8a-f286-4c5e-af6c-1988b6fce0b8",
-      "handle": "samuel aro",
+      "handle": "samuelaro",
       "bio": "electrical engineer",
-      "link": "https.www.samuelaro.com",
+      "link": "https://www.samuelaro.com",
       "img": "https://i.imgur.com/jONHmE5.png",
       "instagram_url": "https://www.instagram.com/samuelaro",
       "followers": [
