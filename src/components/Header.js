@@ -1,4 +1,4 @@
-const Header = ({ user }) => {
+const Header = ({ user, viewThreadsFeed, setViewThreadsFeed }) => {
   return (
     <header>
       <div className="info-container">
@@ -26,8 +26,18 @@ const Header = ({ user }) => {
         Share Profile
       </button>
       <div className="button-container">
-        <button className="current">Threads</button>
-        <button>Replies</button>
+        <button
+          className={viewThreadsFeed ? "current" : null}
+          onClick={() => setViewThreadsFeed(true)}
+        >
+          Threads
+        </button>
+        <button
+          className={!viewThreadsFeed ? "current" : null}
+          onClick={() => setViewThreadsFeed(false)}
+        >
+          Replies
+        </button>
       </div>
     </header>
   );
