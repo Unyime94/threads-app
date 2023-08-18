@@ -29,7 +29,8 @@ const App = () => {
       const response = await fetch(
         `http://localhost:3000/threads?thread_from=${userId}`
       );
-      const data = response.json();
+      console.log(response);
+      const data = await response.json();
       setThreads(data);
     } catch (error) {
       console.error(error);
