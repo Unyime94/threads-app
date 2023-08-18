@@ -1,4 +1,9 @@
+import { useState, useEffect } from "react";
+import moment from "moment";
+
 const Thread = ({ user, filteredThread }) => {
+  const timePassed = moment().startOf("day").fromNow(filteredThread.timestamp);
+
   return (
     <article className="feed-card">
       <div className="text-container">
@@ -13,7 +18,7 @@ const Thread = ({ user, filteredThread }) => {
             <p>{filteredThread.text}</p>
           </div>
         </div>
-        <p className="sub-text">time</p>
+        <p className="sub-text">{timePassed}</p>
       </div>
       <div className="icons">
         <svg
@@ -55,7 +60,8 @@ const Thread = ({ user, filteredThread }) => {
         </svg>
       </div>
       <p className="sub-text">
-        <span>X replies</span> • <span>X likes</span>
+        <span>X replies</span> •{" "}
+        <span>{filteredThread.likes.length} likes</span>
       </p>
     </article>
   );

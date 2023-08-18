@@ -125,7 +125,7 @@ button.primary {
 }
 
 .feed {
-  height: 400px;
+  height: 350px;
   overflow-x: scroll;
 }
 
@@ -156,4 +156,11 @@ input:focus {
   box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0 -12px 30px,
     rgba(0, 0, 0, 0.12) 0 4px 6px, rgba(0, 0, 0, 0.17) 0 12px 13px,
     rgba(0, 0, 0, 0.09) 0 -3px 5px;
+}
+
+.writeicon {
+  height: 40px;
+  margin-top: 20px;
+  margin-left: 175px;
+  fill: rgb(250, 250, 250);
 }
