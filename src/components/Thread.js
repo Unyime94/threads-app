@@ -1,8 +1,12 @@
 import { useState, useEffect } from "react";
 import moment from "moment";
 
-const Thread = ({ user, filteredThread }) => {
+const Thread = ({ user, filteredThread, setOpenPopUp }) => {
   const timePassed = moment().startOf("day").fromNow(filteredThread.timestamp);
+
+  const handleClick = () => {
+    setOpenPopUp(true);
+  };
 
   return (
     <article className="feed-card">
@@ -35,6 +39,7 @@ const Thread = ({ user, filteredThread }) => {
           />
         </svg>
         <svg
+          onClick={handleClick}
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
@@ -59,7 +64,7 @@ const Thread = ({ user, filteredThread }) => {
           <path d="M0 12l11 3.1 7-8.1-8.156 5.672-4.312-1.202 15.362-7.68-3.974 14.57-3.75-3.339-2.17 2.925v-.769l-2-.56v7.383l4.473-6.031 4.527 4.031 6-22z" />
         </svg>
       </div>
-      <p className="sub-text">
+      <p className="sub-text" onClick={handleClick}>
         <span>X replies</span> •{" "}
         <span>{filteredThread.likes.length} likes</span>
       </p>

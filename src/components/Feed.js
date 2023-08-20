@@ -1,6 +1,6 @@
 import Thread from "./Thread";
 
-const Feed = ({ user, filteredThreads }) => {
+const Feed = ({ user, filteredThreads, setOpenPopUp }) => {
   return (
     <div className="feed">
       {filteredThreads &&
@@ -8,6 +8,7 @@ const Feed = ({ user, filteredThreads }) => {
           <Thread
             key={filteredThread.id}
             filteredThread={filteredThread}
+            setOpenPopUp={setOpenPopUp}
             user={user}
           />
         ))}

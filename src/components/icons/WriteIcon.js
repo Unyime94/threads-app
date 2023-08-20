@@ -1,7 +1,7 @@
 const WriteIcon = () => {
   return (
     <svg
-      className="writeicon"
+      className="write-icon"
       clip-rule="evenodd"
       fill-rule="evenodd"
       stroke-linejoin="round"
