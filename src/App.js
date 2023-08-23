@@ -79,6 +79,7 @@ const App = () => {
             user={user}
             filteredThreads={filteredThreads}
             setOpenPopUp={setOpenPopUp}
+            getThreads={getThreads}
           />
           {openPopUp && <PopUp user={user} setOpenPopUp={setOpenPopUp} />}
           <div onClick={() => setOpenPopUp(true)}>

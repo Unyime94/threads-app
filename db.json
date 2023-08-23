@@ -1,7 +1,7 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": 0,
       "user_uuid": "4984e9b8-1364-4bb6-b6cf-d4cbcf9994e6",
       "handle": "unyimekona",
       "bio": "software engineer",
@@ -10,12 +10,16 @@
       "instagram_url": "https://www.instagram.com/unyimekona",
       "username": "Code with Unyime Kona",
       "followers": [
-        { "user_uuid": "f8b91963-f036-4e30-9723-289cece38457" },
-        { "user_uuid": "42c9f27c-2e9a-47a3-8d7d-47ac15a11dee" }
+        {
+          "user_uuid": "f8b91963-f036-4e30-9723-289cece38457"
+        },
+        {
+          "user_uuid": "42c9f27c-2e9a-47a3-8d7d-47ac15a11dee"
+        }
       ]
     },
     {
-      "id": 2,
+      "id": 1,
       "user_uuid": "335c4072-68c5-44d6-998d-b53198055520",
       "handle": "seowochukwurah",
       "bio": "plant biologist",
@@ -24,12 +28,16 @@
       "instagram_url": "https://www.instagram.com/seowoch",
       "username": "Plant biology is my thingy",
       "followers": [
-        { "user_uuid": "f8b91963-f036-4e30-9723-289cece38457" },
-        { "user_uuid": "8b8a9b8a-f286-4c5e-af6c-1988b6fce0b8" }
+        {
+          "user_uuid": "f8b91963-f036-4e30-9723-289cece38457"
+        },
+        {
+          "user_uuid": "8b8a9b8a-f286-4c5e-af6c-1988b6fce0b8"
+        }
       ]
     },
     {
-      "id": 3,
+      "id": 2,
       "user_uuid": "8b8a9b8a-f286-4c5e-af6c-1988b6fce0b8",
       "handle": "samuelaro",
       "bio": "electrical engineer",
@@ -37,52 +45,82 @@
       "img": "https://i.imgur.com/jONHmE5.png",
       "instagram_url": "https://www.instagram.com/samuelaro",
       "followers": [
-        { "user_uuid": "f8b91963-f036-4e30-9723-289cece38457" },
-        { "user_uuid": "4984e9b8-1364-4bb6-b6cf-d4cbcf9994e6" }
+        {
+          "user_uuid": "f8b91963-f036-4e30-9723-289cece38457"
+        },
+        {
+          "user_uuid": "4984e9b8-1364-4bb6-b6cf-d4cbcf9994e6"
+        }
       ]
     }
   ],
   "threads": [
     {
-      "id": 1,
-      "timestamp": "Mon Aug 14 2023 15:34:43 GMT+0100 (West Africa Standard Time)",
+      "id": 0,
+      "timestamp": "Mon Aug 14 2023 18:34:43 GMT+0100 (West Africa Standard Time)",
       "thread_from": "4984e9b8-1364-4bb6-b6cf-d4cbcf9994e6",
       "thread_to": null,
       "reply_to": null,
       "text": "Hello world (of threads)",
       "likes": [
         {
-          "uuid": "335c4072-68c5-44d6-998d-b53198055520"
+          "user_uuid": "335c4072-68c5-44d6-998d-b53198055520"
         },
-        { "uuid": "8b8a9b8a-f286-4c5e-af6c-1988b6fce0b8" }
+        {
+          "user_uuid": "4984e9b8-1364-4bb6-b6cf-d4cbcf9994e6"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "timestamp": "Mon Aug 15 2023 20:34:43 GMT+0100 (West Africa Standard Time)",
+      "thread_from": "4984e9b8-1364-4bb6-b6cf-d4cbcf9994e6",
+      "thread_to": null,
+      "reply_to": null,
+      "text": "Another post from me!",
+      "likes": [
+        {
+          "user_uuid": "335c4072-68c5-44d6-998d-b53198055520"
+        },
+        {
+          "user_uuid": "8b8a9b8a-f286-4c5e-af6c-1988b6fce0b8"
+        },
+        {
+          "user_uuid": "4984e9b8-1364-4bb6-b6cf-d4cbcf9994e6"
+        }
       ]
     },
     {
       "id": 2,
-      "timestamp": "Mon Aug 14 2023 16:34:43 GMT+0100 (West Africa Standard Time)",
-      "thread_from": "4984e9b8-1364-4bb6-b6cf-d4cbcf9994e6",
-      "thread_to": null,
-      "reply_to": null,
-      "text": "Awesome thread",
-      "likes": []
-    },
-    {
-      "id": 3,
-      "timestamp": "Mon Aug 14 2023 18:34:43 GMT+0100 (West Africa Standard Time)",
+      "timestamp": "Mon Aug 15 2023 02:34:43 GMT+0100 (West Africa Standard Time)",
       "thread_from": "335c4072-68c5-44d6-998d-b53198055520",
       "thread_to": null,
       "reply_to": null,
       "text": "Excited for my new research!",
-      "likes": []
+      "likes": [
+        {
+          "user_uuid": "4984e9b8-1364-4bb6-b6cf-d4cbcf9994e6"
+        },
+        {
+          "user_uuid": "8b8a9b8a-f286-4c5e-af6c-1988b6fce0b8"
+        }
+      ]
     },
     {
-      "id": 4,
-      "timestamp": "Mon Aug 14 2023 22:46:43 GMT+0100 (West Africa Standard Time)",
+      "id": 3,
+      "timestamp": "Mon Aug 17 2023 18:34:43 GMT+0100 (West Africa Standard Time)",
       "thread_from": "4984e9b8-1364-4bb6-b6cf-d4cbcf9994e6",
       "thread_to": null,
       "reply_to": "335c4072-68c5-44d6-998d-b53198055520",
-      "text": "Congrats,, Seowo!",
-      "likes": []
+      "text": "Congratulations, Seowo!",
+      "likes": [
+        {
+          "user_uuid": "335c4072-68c5-44d6-998d-b53198055520"
+        },
+        {
+          "user_uuid": "4984e9b8-1364-4bb6-b6cf-d4cbcf9994e6"
+        }
+      ]
     }
   ]
 }

@@ -1,11 +1,40 @@
 import { useState, useEffect } from "react";
 import moment from "moment";
 
-const Thread = ({ user, filteredThread, setOpenPopUp }) => {
+const Thread = ({ user, filteredThread, setOpenPopUp, getThreads }) => {
   const timePassed = moment().startOf("day").fromNow(filteredThread.timestamp);
 
   const handleClick = () => {
     setOpenPopUp(true);
+  };
+
+  console.log("filteredThread", filteredThread);
+
+  const postLike = async () => {
+    const hadBeenLikedByUser = filteredThread.likes.some(
+      (like) => like.user_uuid === user.user_uuid
+    );
+    if (!hadBeenLikedByUser) {
+      filteredThread.likes.push({
+        user_uuid: user.user_uuid,
+      });
+
+      try {
+        const response = await fetch(
+          `http://localhost:3000/threads/${filteredThread.id}`,
+          {
+            method: "PUT",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(filteredThread),
+          }
+        );
+        const result = await response.json();
+        console.log("Success", result);
+        getThreads();
+      } catch (error) {
+        console.error(error);
+      }
+    }
   };
 
   return (
@@ -26,6 +55,7 @@ const Thread = ({ user, filteredThread, setOpenPopUp }) => {
       </div>
       <div className="icons">
         <svg
+          onClick={postLike}
           clip-rule="evenodd"
           fill-rule="evenodd"
           stroke-linejoin="round"
