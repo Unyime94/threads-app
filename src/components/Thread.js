@@ -1,14 +1,19 @@
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import moment from "moment";
 
-const Thread = ({ user, filteredThread, setOpenPopUp, getThreads }) => {
+const Thread = ({
+  user,
+  filteredThread,
+  setOpenPopUp,
+  getThreads,
+  setInteractingThread,
+}) => {
   const timePassed = moment().startOf("day").fromNow(filteredThread.timestamp);
 
   const handleClick = () => {
     setOpenPopUp(true);
+    setInteractingThread(filteredThread);
   };
-
-  console.log("filteredThread", filteredThread);
 
   const postLike = async () => {
     const hadBeenLikedByUser = filteredThread.likes.some(
