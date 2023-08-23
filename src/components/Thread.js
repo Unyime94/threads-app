@@ -1,4 +1,4 @@
-// import { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import moment from "moment";
 
 const Thread = ({
@@ -8,6 +8,7 @@ const Thread = ({
   getThreads,
   setInteractingThread,
 }) => {
+  const [replyLength, setReplyLength] = useState(null);
   const timePassed = moment().startOf("day").fromNow(filteredThread.timestamp);
 
   const handleClick = () => {
@@ -42,6 +43,21 @@ const Thread = ({
     }
   };
 
+  const getRepliesLength = async () => {
+    try {
+      const response = await fetch(
+        `http://localhost:3000/threads?reply_to=${filteredThread?.id}`
+      );
+      const data = await response.json();
+      setReplyLength(data.length);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  useEffect(() => {
+    getRepliesLength();
+  }, [filteredThread]);
   return (
     <article className="feed-card">
       <div className="text-container">
@@ -100,8 +116,10 @@ const Thread = ({
         </svg>
       </div>
       <p className="sub-text" onClick={handleClick}>
-        <span>X replies</span> •{" "}
-        <span>{filteredThread.likes.length} likes</span>
+        <span>
+          {replyLength} {replyLength > 1 ? "replies" : "reply"}
+        </span>{" "}
+        • <span>{filteredThread.likes.length} likes</span>
       </p>
     </article>
   );

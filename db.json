@@ -56,7 +56,7 @@
   ],
   "threads": [
     {
-      "id": 0,
+      "id": 1,
       "timestamp": "Mon Aug 14 2023 18:34:43 GMT+0100 (West Africa Standard Time)",
       "thread_from": "4984e9b8-1364-4bb6-b6cf-d4cbcf9994e6",
       "thread_to": null,
@@ -72,7 +72,7 @@
       ]
     },
     {
-      "id": 1,
+      "id": 2,
       "timestamp": "Tue Aug 15 2023 20:34:43 GMT+0100 (West Africa Standard Time)",
       "thread_from": "4984e9b8-1364-4bb6-b6cf-d4cbcf9994e6",
       "thread_to": null,
@@ -91,7 +91,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": 3,
       "timestamp": "Tue Aug 15 2023 02:34:43 GMT+0100 (West Africa Standard Time)",
       "thread_from": "335c4072-68c5-44d6-998d-b53198055520",
       "thread_to": null,
@@ -107,11 +107,11 @@
       ]
     },
     {
-      "id": 3,
+      "id": 4,
       "timestamp": "Tue Aug 15 2023 18:34:43 GMT+0100 (West Africa Standard Time)",
       "thread_from": "4984e9b8-1364-4bb6-b6cf-d4cbcf9994e6",
       "thread_to": null,
-      "reply_to": 2,
+      "reply_to": 3,
       "text": "Congratulations, Seowo!",
       "likes": [
         {
@@ -123,13 +123,31 @@
       ]
     },
     {
-      "id": 4,
-      "timestamp": "Tue Aug 20 2023 20:34:43 GMT+0100 (West Africa Standard Time)",
-      "thread_from": "335c4072-68c5-44d6-998d-b53198055520",
-      "thread_to": null,
-      "reply_to": 0,
-      "text": "hiya!",
-      "likes": []
+      "timestamp": "4984e9b8-1364-4bb6-b6cf-d4cbcf9994e6",
+      "thread_from": "4984e9b8-1364-4bb6-b6cf-d4cbcf9994e6",
+      "thread_to": "4984e9b8-1364-4bb6-b6cf-d4cbcf9994e6",
+      "reply_to": 1,
+      "text": "welcome to me!",
+      "likes": [],
+      "id": 5
+    },
+    {
+      "timestamp": "4984e9b8-1364-4bb6-b6cf-d4cbcf9994e6",
+      "thread_from": "4984e9b8-1364-4bb6-b6cf-d4cbcf9994e6",
+      "thread_to": "4984e9b8-1364-4bb6-b6cf-d4cbcf9994e6",
+      "reply_to": 1,
+      "text": "how thread treating ya?",
+      "likes": [],
+      "id": 6
+    },
+    {
+      "timestamp": "4984e9b8-1364-4bb6-b6cf-d4cbcf9994e6",
+      "thread_from": "4984e9b8-1364-4bb6-b6cf-d4cbcf9994e6",
+      "thread_to": "4984e9b8-1364-4bb6-b6cf-d4cbcf9994e6",
+      "reply_to": 2,
+      "text": "yaaayy!",
+      "likes": [],
+      "id": 7
     }
   ]
 }
