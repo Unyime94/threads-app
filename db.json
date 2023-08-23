@@ -148,6 +148,19 @@
       "text": "yaaayy!",
       "likes": [],
       "id": 7
+    },
+    {
+      "timestamp": "4984e9b8-1364-4bb6-b6cf-d4cbcf9994e6",
+      "thread_from": "4984e9b8-1364-4bb6-b6cf-d4cbcf9994e6",
+      "thread_to": "4984e9b8-1364-4bb6-b6cf-d4cbcf9994e6",
+      "reply_to": null,
+      "text": "I started a coding course with Ania",
+      "likes": [
+        {
+          "user_uuid": "4984e9b8-1364-4bb6-b6cf-d4cbcf9994e6"
+        }
+      ],
+      "id": 8
     }
   ]
 }

@@ -99,6 +99,12 @@ const App = () => {
     }
   };
 
+  const handleClick = () => {
+    setPopUpFeedThreads(null);
+    setInteractingThread(null);
+    setOpenPopUp(true);
+  };
+
   useEffect(() => {
     getUser();
     getThreads();
@@ -139,7 +145,7 @@ const App = () => {
               setText={setText}
             />
           )}
-          <div onClick={() => setOpenPopUp(true)}>
+          <div onClick={handleClick}>
             <WriteIcon />
           </div>
         </div>
