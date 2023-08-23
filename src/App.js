@@ -13,6 +13,7 @@ const App = () => {
   const [openPopUp, setOpenPopUp] = useState(false);
   const [interactingThread, setInteractingThread] = useState(null);
   const [popUpFeedThreads, setPopUpFeedThreads] = useState(null);
+  const [text, setText] = useState("");
 
   const userId = "4984e9b8-1364-4bb6-b6cf-d4cbcf9994e6";
 
@@ -70,6 +71,34 @@ const App = () => {
     }
   };
 
+  const postThread = async () => {
+    const thread = {
+      timestamp: user.user_uuid,
+      thread_from: user.user_uuid,
+      thread_to: user.user_uuid || null,
+      reply_to: interactingThread?.id || null,
+      text: text,
+      likes: [],
+    };
+
+    try {
+      const response = await fetch("http://localhost:3000/threads", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(thread),
+      });
+      const result = await response.json();
+      console.log("post result", result);
+      getThreads();
+      getReplies();
+      setText("");
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   useEffect(() => {
     getUser();
     getThreads();
@@ -102,8 +131,12 @@ const App = () => {
           />
           {openPopUp && (
             <PopUp
+              user={user}
               setOpenPopUp={setOpenPopUp}
               popUpFeedThreads={popUpFeedThreads}
+              postThread={postThread}
+              text={text}
+              setText={setText}
             />
           )}
           <div onClick={() => setOpenPopUp(true)}>
